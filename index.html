@@ -74,12 +74,10 @@
   .btn.primary:hover{text-decoration:none;filter:brightness(1.08)}
   .btn.ghost{background:var(--card);border-color:var(--line);color:var(--ink)}
   .btn.ghost:hover{text-decoration:none;border-color:var(--accent);color:var(--accent)}
-  .portrait{aspect-ratio:1;border-radius:24px;background:
-      radial-gradient(120% 120% at 20% 10%,var(--accent-soft),transparent 60%),
-      linear-gradient(150deg,var(--navy),#0b1b3a);
-    display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:var(--shadow);position:relative;overflow:hidden}
-  .portrait .initials{font-family:Newsreader,serif;font-size:5.4rem;font-weight:600;letter-spacing:.02em;opacity:.96}
-  .portrait .ring{position:absolute;inset:14px;border:1px solid rgba(255,255,255,.22);border-radius:18px}
+  .portrait{aspect-ratio:1;border-radius:24px;background:linear-gradient(150deg,var(--navy),#0b1b3a);
+    box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .portrait .ring{position:absolute;inset:14px;border:1px solid rgba(255,255,255,.22);border-radius:18px;pointer-events:none;z-index:2}
   .facts{display:flex;gap:26px;flex-wrap:wrap;margin-top:26px}
   .fact .n{font-size:1.5rem;font-weight:800;color:var(--ink)}
   .fact .l{font-size:.82rem;color:var(--muted)}
@@ -176,7 +174,7 @@
         <div class="fact"><div class="n">3</div><div class="l">Papers accepted / under review</div></div>
       </div>
     </div>
-    <div class="portrait" aria-hidden="true"><div class="ring"></div><div class="initials">SF</div></div>
+    <div class="portrait"><img src="assets/portrait.jpg" alt="Dr. Syed Faizan" width="640" height="640"><div class="ring"></div></div>
   </div>
 </section>
 
@@ -302,6 +300,7 @@
           <a href="mailto:syed.faizan@ihub-data.iiit.ac.in">✉ Email</a>
           <a href="https://github.com/SYEDFAIZAN1987">GitHub</a>
           <a href="https://www.linkedin.com/in/drsyedfaizanmd">LinkedIn</a>
+          <a href="https://x.com/drsyedfaizanmd">X (Twitter)</a>
           <a href="https://huggingface.co/DrSyedFaizan">Hugging Face</a>
         </div>
       </div>
