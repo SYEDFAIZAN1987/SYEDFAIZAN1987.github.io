@@ -129,6 +129,27 @@
   .pub .t{font-weight:600}
   .pub .v{color:var(--muted);font-size:.9rem;margin-top:3px}
 
+  /* press */
+  section[id]{scroll-margin-top:82px}
+  nav.links{gap:18px}
+  .press-study{background:var(--accent-soft);border:1px solid var(--line);border-radius:var(--radius);padding:26px;margin-bottom:34px}
+  .press-study h3{font-size:1.23rem;margin:12px 0;max-width:68ch}
+  .press-study p{color:var(--muted);max-width:78ch}
+  .press-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .press-group{margin-top:32px}
+  .press-group h3{font-size:1.16rem}
+  .press-group>p{margin:8px 0 16px;font-size:.94rem}
+  .press-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .press-list li{min-width:0}
+  .press-entry{display:flex;flex-direction:column;gap:7px;height:100%;padding:18px 20px;background:var(--card);border:1px solid var(--line);border-radius:12px;color:var(--ink);transition:border-color .15s ease}
+  .press-entry:hover{border-color:var(--accent);text-decoration:none}
+  .press-entry:focus-visible,.press-actions a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .press-outlet{font-size:.78rem;font-weight:700;color:var(--accent)}
+  .press-headline{font-size:.97rem;font-weight:600;line-height:1.45;overflow-wrap:anywhere}
+  .press-meta{font-size:.8rem;color:var(--muted);margin-top:auto}
+  .press-note{font-size:.84rem;color:var(--muted);margin-top:28px;max-width:90ch}
+  @media(max-width:760px){nav.links{gap:0}}
+  @media(max-width:600px){.press-list{grid-template-columns:1fr}.press-study{padding:20px}.press-actions .btn{font-size:.86rem}}
   /* contact */
   .contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center}
   @media(max-width:760px){.contact-grid{grid-template-columns:1fr}}
@@ -151,6 +172,7 @@
       <a href="#skills" onclick="closeNav()">Skills</a>
       <a href="#work" onclick="closeNav()">Work</a>
       <a href="#publications" onclick="closeNav()">Publications</a>
+      <a href="#press" onclick="closeNav()">Press</a>
       <a href="#contact" onclick="closeNav()">Contact</a>
     </nav>
     <a class="nav-cta" href="Syed_Faizan_CV.pdf">Download CV</a>
@@ -290,6 +312,81 @@
         <div class="v">Australian &amp; New Zealand Journal of Psychiatry, 46(1), 68–69 · Abhishekh, H. &amp; Faizan, S.</div>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="press" aria-labelledby="press-title">
+  <div class="wrap">
+    <div class="eyebrow">In the news</div>
+    <div class="sec-head">
+      <h2 id="press-title">Media Coverage</h2>
+      <p>Coverage of my research with the Language Technologies Research Centre at IIIT Hyderabad on the reliability of medical AI explanations.</p>
+    </div>
+    <div class="press-study">
+      <span class="eyebrow">Featured research · MICCAI iMIMIC 2026</span>
+      <h3>How Well Do Chest X-Ray VLM Attention Overlays Match Radiologist Boxes? A Cross-Model Audit and Radiologist Reader Study</h3>
+      <p>Our study audits four chest X-ray vision-language models across three datasets and includes a two-radiologist reader study. It examines the distinction between a plausible attention overlay and faithful grounding in the image.</p>
+      <div class="press-actions">
+        <a class="btn primary" href="https://papers.miccai.org/miccai-2026-sat/iMIMIC_010.html" target="_blank" rel="noopener noreferrer">Paper &amp; abstract ↗</a>
+        <a class="btn ghost" href="https://papers.miccai.org/miccai-2026-sat/paper/iMIMIC_010.pdf" target="_blank" rel="noopener noreferrer">Paper PDF ↗</a>
+        <a class="btn ghost" href="https://papers.miccai.org/miccai-2026-sat/supp/iMIMIC_010_supp.pdf" target="_blank" rel="noopener noreferrer">Supplement PDF ↗</a>
+        <a class="btn ghost" href="https://github.com/SYEDFAIZAN1987/cxr-vlm-attention-overlay-audit" target="_blank" rel="noopener noreferrer">Research code ↗</a>
+      </div>
+    </div>
+    <div class="press-group">
+      <h3>Press articles</h3>
+      <p class="muted">Reporting and commentary on the chest X-ray vision-language model study.</p>
+      <ul class="press-list">
+        <li><a class="press-entry" href="https://www.thehindu.com/news/cities/Hyderabad/iiit-h-study-caution-doctors-against-relying-entirely-on-ai-for-medical-diagnosis/article71562754.ece/amp/" target="_blank" rel="noopener noreferrer"><span class="press-outlet">The Hindu</span><span class="press-headline">IIIT-H study caution doctors against relying entirely on AI for medical diagnosis <span aria-hidden="true">↗</span></span><span class="press-meta">9 October 2026</span></a></li>
+        <li><a class="press-entry" href="https://www.newindianexpress.com/states/telangana/2026/Oct/09/what-ai-sees-in-an-x-ray-may-not-be-what-doctors-see" target="_blank" rel="noopener noreferrer"><span class="press-outlet">The New Indian Express</span><span class="press-headline">What AI sees in an X-ray may not be what doctors see <span aria-hidden="true">↗</span></span><span class="press-meta">9 October 2026</span></a></li>
+        <li><a class="press-entry" href="https://www.deccanchronicle.com/southern-states/telangana/ai-may-spot-disease-but-mark-wrong-area-iiit-h-study-1994265" target="_blank" rel="noopener noreferrer"><span class="press-outlet">Deccan Chronicle</span><span class="press-headline">AI May Spot Disease but Mark Wrong Area: IIIT-H Study <span aria-hidden="true">↗</span></span><span class="press-meta">8 October 2026</span></a></li>
+        <li><a class="press-entry" href="https://hyderabadmail.com/iiit-h-medical-ai-heatmaps-radiologist-chest-xray-study/" target="_blank" rel="noopener noreferrer"><span class="press-outlet">Hyderabad Mail</span><span class="press-headline">IIIT Hyderabad Study Finds AI Heatmaps May Mislead Radiologists <span aria-hidden="true">↗</span></span><span class="press-meta">9 October 2026</span></a></li>
+        <li><a class="press-entry" href="https://hyderabadmail.com/iiit-h-study-medical-ai-heatmaps-radiologists-chest-x-rays/" target="_blank" rel="noopener noreferrer"><span class="press-outlet">Hyderabad Mail</span><span class="press-headline">IIIT-H study cautions against blindly trusting medical AI heatmaps <span aria-hidden="true">↗</span></span><span class="press-meta">8 October 2026</span></a></li>
+        <li><a class="press-entry" href="https://telanganatoday.com/iiit-hyderabad-study-cautions-against-blindly-trusting-medical-ai-models" target="_blank" rel="noopener noreferrer"><span class="press-outlet">Telangana Today</span><span class="press-headline">IIIT-Hyderabad study cautions against blindly trusting medical AI models <span aria-hidden="true">↗</span></span><span class="press-meta">October 2026</span></a></li>
+        <li><a class="press-entry" href="https://www.eenadu.net/telugu-news/telangana/general/1899/126182979" target="_blank" rel="noopener noreferrer"><span class="press-outlet">Eenadu</span><span class="press-headline">Telugu coverage of the medical AI study <span aria-hidden="true">↗</span></span><span class="press-meta">Telugu · October 2026</span></a></li>
+        <li><a class="press-entry" href="https://www.expresshealthcare.in/amp/news/iiit-h-study-on-medical-ai-models-cautions-against-blindly-trusting-their-output/455491/" target="_blank" rel="noopener noreferrer"><span class="press-outlet">Express Healthcare</span><span class="press-headline">IIIT-H study on medical AI models cautions against blindly trusting their output <span aria-hidden="true">↗</span></span><span class="press-meta">9 October 2026</span></a></li>
+        <li><a class="press-entry" href="https://www.newsbytesapp.com/news/science/iiit-hyderabad-study-warns-of-ai-overreliance-in-chest-x-rays/tldr" target="_blank" rel="noopener noreferrer"><span class="press-outlet">NewsBytes</span><span class="press-headline">IIIT Hyderabad study warns of AI overreliance in chest X-rays <span aria-hidden="true">↗</span></span><span class="press-meta">9 October 2026</span></a></li>
+        <li><a class="press-entry" href="https://www.medboundtimes.com/medicine/do-medical-ai-heatmaps-match-radiologists" target="_blank" rel="noopener noreferrer"><span class="press-outlet">MedBound Times</span><span class="press-headline">Do Medical AI Heatmaps Truly Match Where Radiologists See Disease? <span aria-hidden="true">↗</span></span><span class="press-meta">10 October 2026</span></a></li>
+        <li><a class="press-entry" href="https://urbanacres.in/medical-ai-diagnosis-faces-a-trust-test-in-iiit-h-x-ray-study/" target="_blank" rel="noopener noreferrer"><span class="press-outlet">Urban Acres</span><span class="press-headline">Medical AI Diagnosis Faces a Trust Test in IIIT-H X-Ray Study <span aria-hidden="true">↗</span></span><span class="press-meta">Listed in IIITH media roundup</span></a></li>
+        <li><a class="press-entry" href="https://www.itechguides.com/ai-may-spot-disease-but-mark-the-wrong-area-what-an-iiit-hyderabad-study-found/" target="_blank" rel="noopener noreferrer"><span class="press-outlet">iTechGuides</span><span class="press-headline">AI May Spot Disease but Mark the Wrong Area: What an IIIT Hyderabad Study Found <span aria-hidden="true">↗</span></span><span class="press-meta">9 October 2026</span></a></li>
+        <li><a class="press-entry" href="https://geekchamp.com/ai-may-spot-disease-but-mark-the-wrong-area-what-the-iiit-h-chest-x-ray-study-shows/" target="_blank" rel="noopener noreferrer"><span class="press-outlet">GeekChamp</span><span class="press-headline">AI May Spot Disease but Mark the Wrong Area: What the IIIT-H Chest X-Ray Study Shows <span aria-hidden="true">↗</span></span><span class="press-meta">9 October 2026</span></a></li>
+      </ul>
+    </div>
+
+    <div class="press-group">
+      <h3>Print newspaper coverage</h3>
+      <p class="muted">Newspaper clippings preserved by IIIT Hyderabad.</p>
+      <ul class="press-list">
+        <li><a class="press-entry" href="https://www.iiit.ac.in/wp-content/uploads/2026/10/Eenadu-Medical-AI.jpg" target="_blank" rel="noopener noreferrer"><span class="press-outlet">Eenadu</span><span class="press-headline">Medical AI study — print clipping <span aria-hidden="true">↗</span></span><span class="press-meta">Telugu · Image</span></a></li>
+        <li><a class="press-entry" href="https://www.iiit.ac.in/wp-content/uploads/2026/10/Sakshi-Medical-AI.jpg" target="_blank" rel="noopener noreferrer"><span class="press-outlet">Sakshi</span><span class="press-headline">Medical AI study — print clipping <span aria-hidden="true">↗</span></span><span class="press-meta">Telugu · Image</span></a></li>
+        <li><a class="press-entry" href="https://www.iiit.ac.in/wp-content/uploads/2026/10/Hindu-Medical-AI.jpg" target="_blank" rel="noopener noreferrer"><span class="press-outlet">The Hindu</span><span class="press-headline">Medical AI study — print clipping <span aria-hidden="true">↗</span></span><span class="press-meta">English · Image</span></a></li>
+        <li><a class="press-entry" href="https://www.iiit.ac.in/wp-content/uploads/2026/10/The-Hindu-Business-Line-Medical-AI.jpg" target="_blank" rel="noopener noreferrer"><span class="press-outlet">The Hindu Business Line</span><span class="press-headline">Medical AI study — print clipping <span aria-hidden="true">↗</span></span><span class="press-meta">English · Image</span></a></li>
+      </ul>
+    </div>
+
+    <div class="press-group">
+      <h3>Institutional coverage</h3>
+      <p class="muted">The research feature and official media archive from IIIT Hyderabad.</p>
+      <ul class="press-list">
+        <li><a class="press-entry" href="https://blogs.iiit.ac.in/medical-ai-models/" target="_blank" rel="noopener noreferrer"><span class="press-outlet">IIIT Hyderabad Blog</span><span class="press-headline">IIIT-H Study On Medical AI Models Cautions Against Blindly Trusting Their Output <span aria-hidden="true">↗</span></span><span class="press-meta">8 October 2026 · Sarita Chebbi</span></a></li>
+        <li><a class="press-entry" href="https://www.iiit.ac.in/medical-ai-models/" target="_blank" rel="noopener noreferrer"><span class="press-outlet">IIIT Hyderabad</span><span class="press-headline">Institutional research feature <span aria-hidden="true">↗</span></span><span class="press-meta">October 2026</span></a></li>
+        <li><a class="press-entry" href="https://www.iiit.ac.in/iiit-hyderabad-study-cautions-against-blindly-trusting-medical-ai-models/" target="_blank" rel="noopener noreferrer"><span class="press-outlet">IIIT Hyderabad</span><span class="press-headline">Official media coverage roundup <span aria-hidden="true">↗</span></span><span class="press-meta">9 October 2026</span></a></li>
+      </ul>
+    </div>
+
+    <div class="press-group">
+      <h3>News digests &amp; reposts</h3>
+      <p class="muted">Additional summaries, syndicated mentions, and curated news listings.</p>
+      <ul class="press-list">
+        <li><a class="press-entry" href="https://www.readynews.in/iiit-h-study-caution-doctors-against-relying-entirely-on-ai-for-medical-diagnosis" target="_blank" rel="noopener noreferrer"><span class="press-outlet">ReadyNews</span><span class="press-headline">IIIT-H study caution doctors against relying entirely on AI for medical diagnosis <span aria-hidden="true">↗</span></span><span class="press-meta">10 October 2026 · Attributed to The Hindu Health</span></a></li>
+        <li><a class="press-entry" href="https://www.newsminimalist.com/articles/iiit-h-study-cautions-doctors-against-relying-solely-on-ai-for-chest-x-ray-diagnosis-5b95929b" target="_blank" rel="noopener noreferrer"><span class="press-outlet">News Minimalist</span><span class="press-headline">IIIT-H study cautions doctors against relying solely on AI for chest X-ray diagnosis <span aria-hidden="true">↗</span></span><span class="press-meta">9 October 2026 · Summary of The Hindu</span></a></li>
+        <li><a class="press-entry" href="https://werindia.com/news/cities/thehindu/IIIT-H-study-caution-doctors-against-relying-entirely-on-AI-for-medical-diagnosis-86984016" target="_blank" rel="noopener noreferrer"><span class="press-outlet">WeRIndia</span><span class="press-headline">The Hindu coverage — headline and excerpt <span aria-hidden="true">↗</span></span><span class="press-meta">9 October 2026</span></a></li>
+        <li><a class="press-entry" href="https://pharma.intelligence-synthesis.com/en/ai-medical/news/2026-10-09-morning.html" target="_blank" rel="noopener noreferrer"><span class="press-outlet">Intelligence Synthesis</span><span class="press-headline">AI in Medicine News — morning digest <span aria-hidden="true">↗</span></span><span class="press-meta">9 October 2026 · News digest</span></a></li>
+        <li><a class="press-entry" href="https://pharma.intelligence-synthesis.com/en/ai-medical/news/2026-10-09-evening.html" target="_blank" rel="noopener noreferrer"><span class="press-outlet">Intelligence Synthesis</span><span class="press-headline">AI in Medicine News — evening digest <span aria-hidden="true">↗</span></span><span class="press-meta">9 October 2026 · News digest</span></a></li>
+        <li><a class="press-entry" href="https://aimlshows.com/" target="_blank" rel="noopener noreferrer"><span class="press-outlet">AIMLShows</span><span class="press-headline">Medical AI news-feed mention <span aria-hidden="true">↗</span></span><span class="press-meta">Homepage feed · Entries may change</span></a></li>
+      </ul>
+    </div>
+    <p class="press-note">Coverage collected through 11 October 2026. Press reports, print clippings, and news digests are listed separately from the research paper. Some publishers restrict access; the original links and IIITH clipping archive are provided.</p>
   </div>
 </section>
 
